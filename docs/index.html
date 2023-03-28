@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+        <meta property="og:title" content="Barnes Street Bash" />
+        <meta property="og:description" content="Nov 4, 8PM" />
+        <meta property="og:image" content="https://garrepi.dev/bstb/res/og-image.png" />
+    </head>
+    <body>
+        <div class="h-flex">
+            <h1>
+                Barnes<br>
+                Street<br>
+                Bash
+            </h1>
+            <ul>
+                <li>Joyce</li>
+                <li>Barnes Street Boys</li>
+                <li><a href="https://open.spotify.com/artist/4DSCQGnqSzQQEcjodphDfp?si=hIO6tqO0Qr-xRCVGpnHH4w">Two Factor Authentication</a></li>
+                <li><a href="https://open.spotify.com/artist/7ke5Yl1Nxzu6qg9UdEFtWv?si=_b9FSMojQmazzKDjlyjdCQ">Bad Mint</a></li>
+                <li><a href="https://open.spotify.com/artist/5EBqNSGqpUzEF4CTH1T4EW?si=FXzctXHEQySo93Ih9zMXAQ">Haydon</a></li>
+            </ul>
+        </div>
+
+        <div class="v-flex">
+            <p>Nov 4th 2022, 8pm</p>
+            <p>Doors Open at 7:30</p>
+            <p>1220 Barnes Street, Atlanta GA 30318</p>
+            <p><a href="webcal://garrepi.dev/bstb/res/bstb-cal-event.ics">Add to Calendar</a></p>
+        </div>
+
+        <div id="input-pane" class="v-flex">
+            <input class="w-100 text-input" type="text" id="fname" name="fname" onkeyup="poll_registration_status()" placeholder="First name">
+            <input class="w-100 text-input" type="text" id="lname" name="lname" onkeyup="poll_registration_status()" placeholder="Last name">
+            <input id="register-button" class="w-75 button" type="submit" value="Register to attend" onClick="register()">
+        </div>
+
+        <h2 id="guest-count" class="w-100"></h2>
+        <h3 id="view-count" class="w-100"></h3>
+        <div id="guests" class="guests-grid">
+        </div>
+        <script src="index.js"></script> 
+    </body>
+</html>

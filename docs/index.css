@@ -1,0 +1,90 @@
+:root {
+    --fake-black: hsl(0, 0%, 5%);
+    --blue: #A5C9CA;
+    --white: #afafaf;
+    --form-bg: hsl(0, 0%, 14%);
+    --form-border: hsl(0, 0%, 10%);
+}
+
+.h-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.v-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.w-100 {
+    width: 100%;
+}
+.w-75 {
+    width: 75%;
+}
+.m1 {
+    margin: 1%;
+}
+ul {
+    list-style: none;
+}
+p {
+    margin: 5px;
+    font-size: 1em;
+}
+a {
+    color: var(--blue);
+}
+h1 {
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+h2 {
+    text-align: center;
+    font-size: 1.875em;
+    font-style: bold;
+}
+h3 {
+    text-align: center;
+    font-weight: normal;
+}
+
+#guest-count {
+    margin-bottom: 0px;
+}
+
+#view-count {
+    margin-top: 5px;
+}
+
+body {
+    font-size: 100%;
+    font-family: sans-serif;
+    background-color: var(--fake-black);
+    color: white;
+    margin: 2%;
+}
+.button {
+    text-align: center;
+    font-size: 1em;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid var(--form-border);
+    color: var(--white);
+    background: var(--form-bg);
+}
+.text-input {
+    font-size: 1.2em;
+    line-height: 1.5;
+    border: 1px solid var(--form-border);
+    color: var(--white);
+    background: var(--form-bg);
+    margin: 1px;
+}
+.guests-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr) );
+}

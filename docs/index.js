@@ -13,7 +13,7 @@ function track_view() {
               method: 'POST',
               credentials: 'include',
                 headers: {
-                    Origin: "https://garrepi.dev/btsb",
+                    Origin: "https://garrepi.dev/btsb3",
                     "Content-Type": "text/plain",
                     "Access-Control-Request-Method": "POST",
                     "Access-Control-Request-Headers": "Content-Type, Accept"
@@ -93,7 +93,7 @@ function register() {
               method: 'POST',
               credentials: 'include',
                 headers: {
-                    Origin: "https://garrepi.dev/btsb",
+                    Origin: "https://garrepi.dev/btsb3",
                     "Content-Type": "text/plain",
                     "Access-Control-Request-Method": "POST",
                     "Access-Control-Request-Headers": "Content-Type, Accept"

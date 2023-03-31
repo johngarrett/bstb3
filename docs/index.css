@@ -70,10 +70,7 @@ h3 {
     justify-content: space-between;
 }
 .band-card img {
-    height: 200px;
-}
-.band-card p {
-    width: 100px;
+    height: 30vw;
 }
 .band-time {
     font-weight: bold;

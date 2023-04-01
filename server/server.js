@@ -106,8 +106,8 @@ const register = (req, res) => {
     }
 
     if (
-        queries["fname"] == undefined || queries["lname"] == undefined 
-        || queries["fname"]?.length == 0 || queries["lname"]?.length == 0
+        queries["name"] == undefined
+        || queries["name"]?.length == 0
     ) {
         res.writeHead(500, {
             "Set-Cookie": `registered=failed; SameSite=None; Secure`,
@@ -123,8 +123,8 @@ const register = (req, res) => {
     }
 
     const guest = {
-        fname: queries.fname.escape(),
-        lname: queries.lname.escape(),
+        name: queries.name.escape(),
+        email: queries.email.escape(),
         time: Date.now()
     }
 

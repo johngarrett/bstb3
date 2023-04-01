@@ -67,10 +67,10 @@ h3 {
     display: flex;
     align-items: center;
     width: 90%;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 .band-card img {
-    height: 30vw;
+    height: min(30vw, 200px);
 }
 .band-time {
     font-weight: bold;
@@ -93,17 +93,19 @@ body {
     margin: 2%;
 }
 .button {
+    font-family: "IBM Plex Mono", monospace;
     text-align: center;
     font-size: 1em;
-    margin: 5px;
-    padding: 5px;
-    border: 1px solid var(--form-border);
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid var(--white);
     color: var(--white);
-    background: var(--form-bg);
+    background: var(--clear);
 }
 
 #input-pane {
     border: 2px solid var(--form-border);
+    padding: 10px;
 }
 
 .text-input {
@@ -111,7 +113,7 @@ body {
     line-height: 1.5;
     color: var(--white);
     background: var(--clear);
-    margin: 5px;
+    margin: 10px 0px 10px 0px;
     font-family: "IBM Plex Mono", monospace;
     border-top-style: hidden;
     border-right-style: hidden;

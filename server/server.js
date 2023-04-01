@@ -162,7 +162,7 @@ const guests = (req, res) => {
     const options = {
         // TODO: date
    //   sort: { date: 1 },
-      projection: { _id: 0, fname: 1, lname: 1 },
+      projection: { _id: 0, name: 1 },
     };
 
     const entries = db.collection("guests").find({}, options);

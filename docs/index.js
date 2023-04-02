@@ -121,6 +121,7 @@ function register() {
     .finally(() => {
         fetch_guests();
         fetch_guest_count();
+        location.href = "./res/event.ics"
     });
 }
 

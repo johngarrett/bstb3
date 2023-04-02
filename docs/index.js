@@ -119,8 +119,6 @@ function register() {
         document.getElementById("input-pane").replaceChildren(...[p]);
     })
     .finally(() => {
-        fetch_guests();
-        fetch_guest_count();
         location.href = "./res/event.ics"
     });
 }

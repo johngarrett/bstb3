@@ -44,6 +44,7 @@ p {
     margin: 5px;
     font-size: 1em;
     font-family: 'RubikMonoOne-Regular', sans-serif;
+    overflow: hidden;
 }
 a {
     color: var(--blue);

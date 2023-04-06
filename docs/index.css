@@ -1,6 +1,7 @@
 :root {
     --fake-black: hsl(0, 0%, 5%);
     --blue: #A5C9CA;
+    --red: #cd5c5c;
     --white: #afafaf;
     --clear: rgba(0, 0, 0, 0);
     --form-bg: hsl(0, 0%, 14%);
@@ -45,6 +46,10 @@ p {
     font-size: 1em;
     font-family: 'RubikMonoOne-Regular', sans-serif;
     overflow: hidden;
+}
+.disclaimer {
+    font-family: 'IBM Plex Mono', monospace;
+    color: var(--red);
 }
 a {
     color: var(--blue);
@@ -112,6 +117,9 @@ body {
 #input-pane {
     border: 2px solid var(--form-border);
     padding: 10px;
+}
+#input-pane p {
+    font-family: "IBM Plex Mono", monospace;
 }
 
 .text-input {

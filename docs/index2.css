@@ -12,6 +12,10 @@
   font-family: "RubikMonoOne-Regular";
   src: url('./res/RubikMonoOne-Regular.ttf') format('truetype');
 }
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: url('./res/IBMPlexMono-Regular.ttf') format('truetype');
+}
 
 .mt5 {
     margin-top: 50px;
@@ -48,6 +52,7 @@ p {
     overflow: hidden;
 }
 .disclaimer {
+    margin-top: 25px;
     font-family: 'IBM Plex Mono', monospace;
     color: var(--red);
 }
@@ -77,11 +82,10 @@ h3 {
 .band-card {
     display: flex;
     align-items: center;
-    width: 90%;
     justify-content: flex-end;
 }
 .band-card img {
-    height: min(30vw, 200px);
+    height: min(20vw, 200px);
 }
 .band-time {
     font-weight: bold;
@@ -120,6 +124,7 @@ body {
 }
 #input-pane p {
     font-family: "IBM Plex Mono", monospace;
+    color: var(--white);
 }
 
 .text-input {

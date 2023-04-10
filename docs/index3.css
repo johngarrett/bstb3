@@ -149,3 +149,19 @@ body {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr) );
 }
+.section-header {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+}
+.section-header hr {
+    width: 100%;
+}
+.section-header p {
+    font-size: 12px;
+}
+
+.dotted {
+    border-top: dashed;
+    border-bottom: none;
+}

@@ -123,8 +123,8 @@ function register() {
     });
 }
 
-track_view();
+//track_view();
 fetch_guests();
 fetch_guest_count();
 fetch_view_count();
-poll_registration_status();
+//poll_registration_status();

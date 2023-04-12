@@ -44,8 +44,8 @@ function fetch_view_count() {
 }
 
 function register() {
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
+    const name = "new reg";
+    const email = undefined;
     const params = new URLSearchParams({
         name,
         email

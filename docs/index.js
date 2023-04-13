@@ -44,7 +44,13 @@ function fetch_view_count() {
 }
 
 function register() {
-    const name = "new reg";
+    const today = new Date();
+    const hour = today.getHours();
+    let minute = today.getMinutes();
+    const day = today.getDate();
+
+    const formatted = hour +":" + minute + " " + day 
+    const name = formatted;
     const email = undefined;
     const params = new URLSearchParams({
         name,
